@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weatherForm {
+  margin: 20px;
+}
+.cityInput {
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid hsl(0, 0%, 0.3);
+  border-radius: 10pc;
+  margin: 10px;
+  width: 300px;
+}
+button[type="submit"] {
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: hsl(120, 39%, 50%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background-color: hsl(120, 39%, 40%);
+}
+.card {
+  background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+  padding: 50px;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+  min-width: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card:hover {
+  box-shadow: 4px 4px 10px hsla(0, 0%, 0%, 0.5);
+  opacity: 0.9;
+}
+h1 {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+.cityDisplay,
+.tempDisplay {
+  font-size: 3rem;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.75);
+  margin-bottom: 25px;
+  animation: fadeIn 2s ease-in-out;
+}
+.humidityDisplay {
+  font-weight: bold;
+  margin-bottom: 25px;
+  animation: fadeIn 2.5s ease-in-out;
+}
+.descDisplay {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2.2rem;
+  animation: fadeIn 3s ease-in-out;
+}
+.weatherEmoji {
+  margin: 0;
+  font-size: 5rem;
+  animation: fadeIn 3.5s ease-in-out;
+}
+.errorDisplay {
+  font-size: 2rem;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.75);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
