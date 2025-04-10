@@ -1,5 +1,8 @@
 # This is a simple weather app for all cities over the world with using vanilla Javascript.
 
+![Uploading image.png…]()
+
+
 ### You can enter your city and see your.
 
 # Temperature
